@@ -10,7 +10,8 @@ Summary(pl):	B::Size, B::TerseSize - narzêdzia do okre¶lania rozmiaru perlowych 
 Name:		perl-B-Size
 Version:	0.05
 Release:	4
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	69d631c746f0cac973efaa3d63c78fe2
