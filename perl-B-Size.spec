@@ -9,12 +9,12 @@ Summary:	B::Size, B::TerseSize - tools to measure size of Perl OPs and [SAV]Vs
 Summary(pl):	B::Size, B::TerseSize - narzêdzia do okre¶lania rozmiaru perlowych OP i [SAV]V
 Name:		perl-B-Size
 Version:	0.05
-Release:	3
+Release:	4
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-26
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -37,7 +37,8 @@ wy¿szej).
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -52,9 +53,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_sitearch}/B/*.pm
-%dir %{perl_sitearch}/auto/B
-%dir %{perl_sitearch}/auto/B/Size
-%{perl_sitearch}/auto/B/Size/*.bs
-%attr(755,root,root) %{perl_sitearch}/auto/B/Size/*.so
+%{perl_vendorarch}/B/*.pm
+%dir %{perl_vendorarch}/auto/B
+%dir %{perl_vendorarch}/auto/B/Size
+%{perl_vendorarch}/auto/B/Size/*.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/B/Size/*.so
 %{_mandir}/man3/*
