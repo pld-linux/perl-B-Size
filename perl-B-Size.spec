@@ -1,14 +1,15 @@
 #
 # Conditional build:
 # _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	B
-%define	pnam	Size
+%define		pdir	B
+%define		pnam	Size
 Summary:	B::Size, B::TerseSize - tools to measure size of Perl OPs and [SAV]Vs
 Summary(pl):	B::Size, B::TerseSize - narzêdzia do okre¶lania rozmiaru perlowych OP i [SAV]V
 Name:		perl-B-Size
 Version:	0.05
-Release:	2
+Release:	3
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -51,8 +52,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_sitearch}/%{pdir}/*.pm
-%dir %{perl_sitearch}/auto/%{pdir}/%{pnam}
-%{perl_sitearch}/auto/%{pdir}/%{pnam}/*.bs
-%attr(755,root,root) %{perl_sitearch}/auto/%{pdir}/%{pnam}/*.so
+%{perl_sitearch}/B/*.pm
+%dir %{perl_sitearch}/auto/B
+%dir %{perl_sitearch}/auto/B/Size
+%{perl_sitearch}/auto/B/Size/*.bs
+%attr(755,root,root) %{perl_sitearch}/auto/B/Size/*.so
 %{_mandir}/man3/*
