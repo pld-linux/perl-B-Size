@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	B
-%define	pnam	Size
+%define		pdir	B
+%define		pnam	Size
 Summary:	B::Size, B::TerseSize - tools to measure size of Perl OPs and [SAV]Vs
 Summary(pl):	B::Size, B::TerseSize - narzêdzia do okre¶lania rozmiaru perlowych OP i [SAV]V
 Name:		perl-B-Size
