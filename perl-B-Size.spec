@@ -9,7 +9,7 @@ Summary:	B::Size, B::TerseSize - tools to measure size of Perl OPs and [SAV]Vs
 Summary(pl):	B::Size, B::TerseSize - narzêdzia do okre¶lania rozmiaru perlowych OP i [SAV]V
 Name:		perl-B-Size
 Version:	0.05
-Release:	4
+Release:	5
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
