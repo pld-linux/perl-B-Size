@@ -8,13 +8,13 @@
 Summary:	B::Size, B::TerseSize - tools to measure size of Perl OPs and [SAV]Vs
 Summary(pl):	B::Size, B::TerseSize - narzêdzia do okre¶lania rozmiaru perlowych OP i [SAV]V
 Name:		perl-B-Size
-Version:	0.06
+Version:	0.08
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	efff6c00ac5951c0d5fd76077c580aca
+# Source0-md5:	959d2ffd250db32f3050c891ab8091b5
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
