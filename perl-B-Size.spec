@@ -6,7 +6,7 @@
 %define		pdir	B
 %define		pnam	Size
 Summary:	B::Size, B::TerseSize - tools to measure size of Perl OPs and [SAV]Vs
-Summary(pl):	B::Size, B::TerseSize - narzÍdzia do okre∂lania rozmiaru perlowych OP i [SAV]V
+Summary(pl.UTF-8):   B::Size, B::TerseSize - narzƒôdzia do okre≈õlania rozmiaru perlowych OP i [SAV]V
 Name:		perl-B-Size
 Version:	0.08
 Release:	1
@@ -27,13 +27,13 @@ B::Terse, but includes the size of each OP in the tree and the PADLIST
 compiler backends or used via Apache::Status (version 2.02 and
 higher).
 
-%description -l pl
-Modu≥y B::Size i B::TerseSize prÛbuj± okre∂liÊ rozmiar perlowych
-opkodÛw. Wyj∂cie B::TerseSize jest podobne do wyj∂cia B::Terse, ale
-zawiera rozmiar kaødego OP w drzewie oraz PADLIST (leksykalne zmienne
-procedur). Modu≥ moøe byÊ uruchamiany tak jak inne backendy
-kompilatora lub uøywany poprzez Apache::Status (w wersji 2.02 lub
-wyøszej).
+%description -l pl.UTF-8
+Modu≈Çy B::Size i B::TerseSize pr√≥bujƒÖ okre≈õliƒá rozmiar perlowych
+opkod√≥w. Wyj≈õcie B::TerseSize jest podobne do wyj≈õcia B::Terse, ale
+zawiera rozmiar ka≈ºdego OP w drzewie oraz PADLIST (leksykalne zmienne
+procedur). Modu≈Ç mo≈ºe byƒá uruchamiany tak jak inne backendy
+kompilatora lub u≈ºywany poprzez Apache::Status (w wersji 2.02 lub
+wy≈ºszej).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
