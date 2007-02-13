@@ -6,7 +6,7 @@
 %define		pdir	B
 %define		pnam	Size
 Summary:	B::Size, B::TerseSize - tools to measure size of Perl OPs and [SAV]Vs
-Summary(pl.UTF-8):   B::Size, B::TerseSize - narzędzia do określania rozmiaru perlowych OP i [SAV]V
+Summary(pl.UTF-8):	B::Size, B::TerseSize - narzędzia do określania rozmiaru perlowych OP i [SAV]V
 Name:		perl-B-Size
 Version:	0.08
 Release:	1
