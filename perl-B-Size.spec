@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	B
 %define		pnam	Size
 Summary:	B::Size, B::TerseSize - tools to measure size of Perl OPs and [SAV]Vs
